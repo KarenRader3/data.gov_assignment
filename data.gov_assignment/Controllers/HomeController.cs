@@ -48,7 +48,16 @@ namespace data.gov_assignment.Controllers
                 // This is a useful place to insert a breakpoint and observe the error message
                 Console.WriteLine(e.Message);
             }
+
+
             return View();
         }
+        [HttpPost]
+        public IActionResult Contact(GuestContact contact)
+        {
+            return View(contact);
+        }
+
     }
+
 }
